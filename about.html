@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Wanderlust - Your Journey Begins Here</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-700">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-gray-100/95 backdrop-blur-md shadow-lg" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-800 transition-colors">
+                    <span class="text-yellow-400">Wander</span>lust
+                </a>
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex space-x-8" id="nav-links">
+                    <a href="index.html#home" class="text-gray-800 hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-yellow-300 transition-colors font-bold">About</a>
+                    <a href="index.html#services" class="text-gray-800 hover:text-yellow-300 transition-colors">Services</a>
+                    <a href="index.html#packages" class="text-gray-800 hover:text-yellow-300 transition-colors">Packages</a>
+                    <a href="index.html#destinations" class="text-gray-800 hover:text-yellow-300 transition-colors">Destinations</a>
+                    <a href="index.html#gallery" class="text-gray-800 hover:text-yellow-300 transition-colors">Gallery</a>
+                    <a href="index.html#blog" class="text-gray-800 hover:text-yellow-300 transition-colors">Blog</a>
+                    <a href="index.html#contact" class="text-gray-800 hover:text-yellow-300 transition-colors">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-800 text-2xl" id="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden bg-gray-100/95 backdrop-blur-md transition-all duration-300 max-h-0 overflow-hidden">
+            <div class="flex flex-col space-y-4 px-6 py-4 text-center">
+                <a href="index.html#home" class="text-gray-800 hover:text-yellow-600 transition-colors">Home</a>
+                <a href="about.html" class="text-gray-800 hover:text-yellow-600 transition-colors font-bold">About</a>
+                <a href="index.html#services" class="text-gray-800 hover:text-yellow-600 transition-colors">Services</a>
+                <a href="index.html#packages" class="text-gray-800 hover:text-yellow-600 transition-colors">Packages</a>
+                <a href="index.html#destinations" class="text-gray-800 hover:text-yellow-600 transition-colors">Destinations</a>
+                <a href="index.html#gallery" class="text-gray-800 hover:text-yellow-600 transition-colors">Gallery</a>
+                <a href="index.html#blog" class="text-gray-800 hover:text-yellow-600 transition-colors">Blog</a>
+                <a href="index.html#contact" class="text-gray-800 hover:text-yellow-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section for About Page (Updated with more detail) -->
+    <section class="hero" id="about-hero">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 font-playfair animate-on-scroll fade-in">Our Story</h1>
+            <p class="text-xl md:text-2xl mb-4 max-w-3xl mx-auto animate-on-scroll fade-in" style="animation-delay: 0.2s;">
+                Crafting exceptional journeys and unforgettable memories.
+            </p>
+            <p class="text-lg md:text-xl mb-8 max-w-4xl mx-auto animate-on-scroll fade-in" style="animation-delay: 0.4s;">
+                At Wanderlust, we believe that the world is waiting to be explored, and every journey is a unique story waiting to be told. We are more than just a travel agency; we are a team of passionate adventurers committed to making your travel dreams a reality.
+            </p>
+            <a href="#our-mission" class="smooth-scroll-link bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-full text-lg font-semibold transition-colors shadow-lg animate-on-scroll fade-in" style="animation-delay: 0.6s;">
+                Discover Our Mission
+            </a>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section id="our-mission" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll scale-in">
+                    <img src="/assets/our-story.jpg" alt="A person hiking on a beautiful mountain trail at sunset, symbolizing adventure" class="rounded-2xl shadow-xl">
+                </div>
+                <div class="animate-on-scroll">
+                    <h2 class="text-4xl font-bold mb-4 section-title font-playfair text-gray-800">Our Story and Mission</h2>
+                    <p class="text-gray-600 mb-6">Founded in 2009 by a team of passionate adventurers, Wanderlust was born from a simple idea: travel should be more than just a trip—it should be a profound, personal experience. Our mission is to inspire and enable people to explore the world in a way that is authentic, sustainable, and truly life-changing.</p>
+                    <p class="text-gray-600">We believe that every journey tells a story. We're here to help you write yours, with chapters filled with discovery, connection, and unforgettable memories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values & Team Section -->
+    <section id="our-values" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="animate-on-scroll">
+                    <h3 class="text-3xl font-bold mb-4 text-gray-800">Our Core Values</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-compass text-yellow-500 mr-4 mt-1"></i>
+                            <span><strong class="text-gray-900">Personalized Service:</strong> We don't believe in one-size-fits-all. Every itinerary is crafted to reflect your unique interests, passions, and travel style.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-handshake text-yellow-500 mr-4 mt-1"></i>
+                            <span><strong class="text-gray-900">Uncompromising Quality:</strong> From the hotels we partner with to the guides we recommend, we ensure every aspect of your journey meets the highest standards.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-seedling text-yellow-500 mr-4 mt-1"></i>
+                            <span><strong class="text-gray-900">Sustainable Tourism:</strong> We are committed to responsible travel that respects local cultures and environments, leaving a positive impact wherever we go.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="animate-on-scroll">
+                    <h3 class="text-3xl font-bold mb-4 text-gray-800">Meet the Team</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-md">
+                            <img src="/assets/Emma bale.jpg" alt="Emma Bale" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Emma Bale</h4>
+                                <p class="text-gray-600">Founder & CEO</p>
+                                <p class="text-sm text-gray-500 mt-1">Specializes in luxury and adventure travel. Passionate about responsible tourism.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-xl shadow-md">
+                            <img src="/assets/john smith.jpg" alt="John Smith" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">John Smith</h4>
+                                <p class="text-gray-600">Head of Operations</p>
+                                <p class="text-sm text-gray-500 mt-1">An expert in logistics, ensuring every trip runs smoothly and seamlessly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-700 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Wanderlust Travel Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

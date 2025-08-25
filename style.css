@@ -1,0 +1,225 @@
+/* Index.html page */
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #4b5563;
+    /* text-gray-600 */
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero section background image with gradient overlay for text readability */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/travel-herosection.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Smooth transition for navigation bar on scroll */
+.nav-scroll {
+    background: rgba(243, 244, 246, 0.95);
+    /* bg-gray-100 */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the animated section titles with an underline effect */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #d4af37;
+    /* Gold color */
+    transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.section-title.is-visible::after {
+    width: 80px;
+    /* Expands the underline on reveal */
+}
+
+/* Custom gold gradient for backgrounds */
+.gradient-gold-bg {
+    background: linear-gradient(135deg, #d4af37 0%, #a67c00 100%);
+}
+
+/* --- Animations for elements appearing on scroll --- */
+/* These classes define the initial hidden state */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-on-scroll.scale-in {
+    transform: scale(0.9);
+}
+
+.animate-on-scroll.fade-in {
+    transform: translateY(0);
+}
+
+/* This class defines the final visible state and triggers animations */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll.is-visible.scale-in {
+    transform: scale(1);
+}
+
+/* Add a staggered animation effect for children elements */
+.grid.stagger-in>* {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.grid.stagger-in.is-visible>* {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add hover effects for cards */
+.destination-card:hover,
+.testimonial-card:hover,
+.service-card:hover,
+.package-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* General element styles for rounded corners and shadows */
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.rounded-3xl {
+    border-radius: 1.5rem;
+}
+
+/* Custom message modal styles */
+.message-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.message-modal.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* About.html page */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero section background image with gradient overlay for text readability */
+.hero {
+    /* Updated hero background for better visual appeal */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/about-herosection.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    /* Increased height to better fit the new content */
+    display: flex;
+    align-items: center;
+}
+
+/* Smooth transition for navigation bar on scroll */
+.nav-scroll {
+    background: rgba(243, 244, 246, 0.95);
+    /* bg-gray-100 */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the animated section titles with an underline effect */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #d4af37;
+    /* Gold color */
+    transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.section-title.is-visible::after {
+    width: 80px;
+    /* Expands the underline on reveal */
+}
+
+/* --- Animations for elements appearing on scroll --- */
+/* These classes define the initial hidden state */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-on-scroll.scale-in {
+    transform: scale(0.9);
+}
+
+.animate-on-scroll.fade-in {
+    transform: translateY(0);
+}
+
+/* This class defines the final visible state and triggers animations */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll.is-visible.scale-in {
+    transform: scale(1);
+}
+
+/* Add a staggered animation effect for children elements */
+.grid.stagger-in>* {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.grid.stagger-in.is-visible>* {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* General element styles for rounded corners and shadows */
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.rounded-3xl {
+    border-radius: 1.5rem;
+}
