@@ -1,17 +1,18 @@
 /* Index.html page */
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     color: #4b5563;
     /* text-gray-600 */
 }
 
 .font-montserrat {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Hero section background image with gradient overlay for text readability */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/travel-herosection.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/assets/travel-herosection.jpg") center/cover no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -32,7 +33,7 @@ body {
 }
 
 .section-title::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -129,16 +130,16 @@ body {
     transform: translate(-50%, -50%) scale(1);
 }
 
-
 /* About.html page */
 .font-playfair {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
 /* Hero section background image with gradient overlay for text readability */
 .hero {
     /* Updated hero background for better visual appeal */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/about-herosection.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/assets/about-herosection.jpg") center/cover no-repeat;
     min-height: 100vh;
     /* Increased height to better fit the new content */
     display: flex;
@@ -160,7 +161,7 @@ body {
 }
 
 .section-title::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -222,4 +223,10 @@ body {
 
 .rounded-3xl {
     border-radius: 1.5rem;
+}
+
+/* Add this class to make the mobile menu visible */
+.mobile-menu-show {
+    max-height: 500px !important;
+    /* Adjust this value as needed to fit all content */
 }
